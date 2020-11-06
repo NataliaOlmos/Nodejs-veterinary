@@ -1,12 +1,14 @@
 const express = require('express');
 const app = express();
 
-require ('dotenv').config()
 const port = process.env.PORT || 3000;
 
+require ('dotenv').config()
+
 //conexión a base de datos
-// getting-started.js
+
 const mongoose = require('mongoose');
+
 
 const uri = `mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@cluster0.xfjs7.mongodb.net/${process.env.DBNAME}?retryWrites=true&w=majority`;
 
